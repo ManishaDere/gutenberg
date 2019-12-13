@@ -9,8 +9,7 @@ body {
 h1 {
   font-family: "Montserrat, Semi Bold" !important;
   font-size: 48px !important;
-  color: #5E56E7;
-}
+  }
 h2 {
   font-family: "Montserrat, Semi Bold";
   font-size: 30px;
@@ -27,6 +26,10 @@ h2 {
   font-family: "Montserrat, Regular";
   font-size: 12px;
 }
+.genre-card {
+  font-family: "Montserrat, Regular";
+  font-size: 20px;
+}
 .text-box {
   border-radius: 4px;
   padding: 0 10px;
@@ -34,10 +37,7 @@ h2 {
 }
 #gutenberg-intro {
   height: 30vh;
-  background: url('./images/Pattern.svg');
-  display: flex;
-  align-items: flex-end;
-  padding-left: 30px;
+  background-image: url('../assets/images/Pattern.svg');
 }
 .btn-images__wrapper {
   width: 10%;
@@ -53,32 +53,17 @@ h2 {
 }
 .genre-card {
   display: flex;
-  align-items: center;
   border-radius: 4px;
-  padding: 0px 10px;
+  padding: 0 10px;
   height: 50px;
-  width: 100%;
+  width: 80%;
   box-shadow: 0 2px 5px 0 rgba(211, 209, 238, 0.5);
   text-transform: uppercase;
-  font-family: "Montserrat, Regular";
-  font-size: 20px;
-  margin-top: 20px;
 }
 .book-card {
   width: 114px;
   height: 162px;
   border-radius: 8px;
   box-shadow: 0 2px 5px 0 rgba(211, 209, 238, 0.5);
-}
-#gutenberg-btns {
-  padding-top: 20px;
-  background-color: #F8F7FF;
-  height: 70vh;
-}
-#gutenberg-btns div {
-  text-align: left;
-}
-.common-css-col {
-  text-align: center !important;
 }
 
