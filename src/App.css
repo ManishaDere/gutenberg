@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Montserrat, Regular" !important;
-  src: url("./Montserrat/Montserrat-Regular.ttf") format("truetype");
+  src: url("${process.env.PUBLIC_URL}/fonts/montserrat/Montserrat-Regular.ttf") format("truetype");
 }
 body {
   font-family: "Montserrat, Regular" !important;
@@ -14,6 +14,9 @@ h1 {
 h2 {
   font-family: "Montserrat, Semi Bold";
   font-size: 30px;
+}
+ul {
+  list-style: none;
 }
 .search-box {
   font-family: "Montserrat, Regular";
@@ -32,12 +35,14 @@ h2 {
   padding: 0 10px;
   max-height: 40px;
 }
-#gutenberg-intro {
+.gutenberg-intro {
   height: 30vh;
-  background: url('./images/Pattern.svg');
   display: flex;
   align-items: flex-end;
   padding-left: 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
 }
 .btn-images__wrapper {
   width: 10%;
@@ -63,6 +68,8 @@ h2 {
   font-family: "Montserrat, Regular";
   font-size: 20px;
   margin-top: 20px;
+  background-color: #fff;
+  text-decoration: none !important;
 }
 .book-card {
   width: 114px;
@@ -70,12 +77,12 @@ h2 {
   border-radius: 8px;
   box-shadow: 0 2px 5px 0 rgba(211, 209, 238, 0.5);
 }
-#gutenberg-btns {
+.gutenberg-btns {
   padding-top: 20px;
   background-color: #F8F7FF;
   height: 70vh;
 }
-#gutenberg-btns div {
+.gutenberg-btns div {
   text-align: left;
 }
 .common-css-col {
