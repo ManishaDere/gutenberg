@@ -1,6 +1,6 @@
 import React from 'react';
 import Topic from './Topic';
-import './App.css';
+import './App.scss';
 
 const topicsInfoArray = [
   {
