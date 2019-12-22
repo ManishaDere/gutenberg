@@ -36,24 +36,22 @@ class BooksInfo extends React.Component {
       console.log(error);
     })
   }
-
   componentDidUpdate(prevProps, prevState, snapshot) {
     let { keyword } = this.state;
     if(prevState.keyword !== keyword) {
       axios.get(`http://skunkworks.ignitesol.com:8000/books/?search=${keyword}&mime_type=image`)
-      .then((res) => {
-          this.setState({
-            categoryList: res.data.results,
-            count: res.data.count,
-            nextUrl: res.data.next,
-          });
-      })
-      .catch(function (error) {
-        console.log(error);
-      })
+        .then((res) => {
+            this.setState({
+              categoryList: res.data.results,
+              count: res.data.count,
+              nextUrl: res.data.next,
+            });
+        })
+        .catch(function (error) {
+          console.log(error);
+        })
     }
   }
-
   handleChange(e) {
     let cancel = this.refs.cancel;
     if(e.target.value === '') {
@@ -115,7 +113,6 @@ class BooksInfo extends React.Component {
     } else {
       alert("No viewable version available");
     }
-
   }
 
   render() {
@@ -133,7 +130,7 @@ class BooksInfo extends React.Component {
             <div className="img-search-block">
               <img src="/images/Search.svg" alt="search" className="search-icon"/>
             </div>
-            <input type="text" name="searchTopicAuthor" className="text-box" placeholder="Search" ref="searchTopicAuthor" onChange={this.handleChange} />
+            <input type="text" name="searchTopicAuthor" className="text-box" placeholder="Search" ref="searchTopicAuthor" onKeyUp={this.handleChange} />
             <img src="./images/Cancel.svg" alt="cancel" className="cancel-icon" ref="cancel" onClick={this.handleCancel}/>
           </div>
         </section>
