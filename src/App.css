@@ -35,6 +35,9 @@ ul {
   padding: 0 10px;
   max-height: 40px;
 }
+text-box:focus {
+  outline-color: #5E56E7;
+}
 .gutenberg-intro {
   height: 30vh;
   display: flex;
@@ -88,4 +91,33 @@ ul {
 .common-css-col {
   text-align: center !important;
 }
+.back-btn {
+  display: flex;
+  text-transform: uppercase;
+  color: #5E56E7;
+  text-decoration: none;
+}
+.back-btn:hover {
+  text-decoration: none;
+}
+.back-btn__text {
+  margin-left: 10px;
+}
+.books-info__header {
+  height: 30vh;
+}
+.books-info__header__search-block {
+  display: flex;
+}
+.books-info__header__search-block .search-icon {
+}
+.books-info__header__search-block .cancel-icon {
+}
+.img-search-block {
+  width: 40px;
+}
+.img-cancel-block {
+  width: 40px;
+}
+
 
