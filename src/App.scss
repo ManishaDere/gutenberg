@@ -117,7 +117,9 @@ body {
           height: 40px;
         }
         .text-box:focus {
-          outline-color: #5E56E7;
+          outline: none;
+          border: 1.5px solid #5E56E7;
+          border-radius: 4px;
         }
         .cancel-icon {
           display: none;
